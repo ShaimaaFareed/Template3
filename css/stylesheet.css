@@ -1,0 +1,108 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+body{
+    font-family: 'Work Sans', sans-serif;
+    background-color: lightgray !important;
+}
+a{
+text-decoration: none;
+color: white !important;
+}
+a:hover{
+color: rgb(83, 142, 184) !important;
+}
+ul{
+list-style: none;
+}
+code{
+    font-size: 20px !important;
+}
+@media (min-width:768px){
+.container {width: 750px;}
+}
+@media (min-width:992px){
+.container{width: 970px;}
+}
+@media (min-width:1200px){
+.container{width: 1170px;}
+}
+.navbar-brand{
+    transition: 0.4s;
+}
+.navbar-brand:hover{
+    text-shadow: 5px 5px 10px,
+                -5px -5px 10px;
+}
+.overlay{
+    background-color: black;
+    opacity: 0.8;
+}
+.carousel-inner h1{
+    color: white;
+}
+.carousel-inner .carousel-caption{
+    background: rgba(73, 73, 73, 0.323);
+    border-radius: 5px;
+    width: 70%;
+    margin: auto;
+}
+.btnbefo{
+    position: relative;
+    left: 10px;
+    top: 20px;
+    bottom: 20px;
+}
+.btnbefo::before{
+position: absolute;
+content: "";
+border-width: 10px;
+border-style:solid;
+border-color: transparent transparent white transparent;
+top: 20px;
+left: 13px;
+display: none;
+}
+.btnbefo::after{
+position: absolute;
+content: " ";
+height: 40px;
+width: 80px;
+background-color: white;
+top: 40px;
+left: -15px;
+border-radius: 5px;
+display: none;
+}
+.btnbefo:active::before,
+.btn:hover::before{
+    display: block;
+}
+.btnbefo:hover::after{
+    content: "copy to clipboard";
+    display: block;
+}
+.btnbefo:active::after{
+    content: "copied";
+    display: block;
+    height: 25px;
+}
+.myicon{
+    height:30px;
+    width: 30px;
+    border-radius: 50%;
+}
+.fixedimg{
+    background-attachment: fixed;
+    background-size: cover;
+    height: 350px;
+    }
+    .fixedimg1{
+    background-image: url(../images/rear-view-programmer-working-all-night-long.jpg);
+    }
+    .fixedimg2{
+    background-image: url(../images/Capture.PNG);
+    }
+
